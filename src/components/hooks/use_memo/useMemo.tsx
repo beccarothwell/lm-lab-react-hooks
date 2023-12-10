@@ -14,7 +14,10 @@ export const MemoExample = () => {
     <>
       <h2>useMemo</h2>
 
+      <button onClick={() => setNumberObj({ input: 2 })}>Double 2</button>
       <button onClick={() => setNumberObj({ input: 3 })}>Double 3</button>
+      <button onClick={() => setNumberObj({ input: 4 })}>Double 4</button>
+      <button onClick={() => setNumberObj({ input: 5 })}>Double 5</button>
 
       <p className="use-memo__text">{doubleNumber}</p>
     </>
