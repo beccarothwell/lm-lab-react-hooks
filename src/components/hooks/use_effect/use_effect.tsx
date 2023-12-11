@@ -18,7 +18,6 @@ export const APICall = () => {
       const response = await fetch(apiEndPoint);
       try {
         const json = await response.json();
-        console.log(json);
         setToDo(json as ToDo);
       } catch (error) {
         console.log(error);
@@ -26,7 +25,6 @@ export const APICall = () => {
     };
 
     fetchData(jsonTypicode);
-    console.log(toDo);
   }, []);
 
   return (
