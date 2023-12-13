@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 export function CountCats() {
-  //const cats = ["🐈"].length;
   const [cats, setCats] = useState(["🐈"]);
   const catsCount = cats.length;
 
