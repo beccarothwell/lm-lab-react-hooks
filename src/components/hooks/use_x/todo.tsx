@@ -8,7 +8,7 @@ interface Todo {
   completed: boolean;
 }
 
-const Todo = () => {
+export const Todo = () => {
   const toDo = useFetch<Todo>("/todos/1");
 
   return (
@@ -19,5 +19,3 @@ const Todo = () => {
     </>
   );
 };
-
-export default Todo;
