@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { isError } from "../../../helpers/is_error";
 
-function useFetch<T>(endpoint: string) {
-  const [data, setData] = useState<T>();
+function useFetch<TData>(endpoint: string) {
+  const [data, setData] = useState<TData>();
   const [isFetching, setIsFetching] = useState(true);
 
   const baseUrl = "https://jsonplaceholder.typicode.com";
